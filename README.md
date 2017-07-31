@@ -1,11 +1,2 @@
-# PacketLib
-PacketLib is a library for packet-based networking between clients and servers It was made as a basis for other projects involving packet networking.
-
-## Test Example
-See examples/com/github/steveice10/packetlib/test
-
-## Building the Source
-PacketLib uses Maven to manage dependencies. Simply run 'mvn clean install' in the source's directory.
-
-## License
-PacketLib is licensed under the **[MIT license](http://www.opensource.org/licenses/mit-license.html)**.
+# Branch names are not exact versions!!!
+## Made for [my MCProtocolLib repo](https://github.com/Mareckoo01/MCProtocolLib)
