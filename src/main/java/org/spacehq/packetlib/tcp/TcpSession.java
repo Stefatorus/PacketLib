@@ -156,7 +156,7 @@ public abstract class TcpSession extends SimpleChannelInboundHandler<Packet> imp
         this.compressionThreshold = threshold;
         if(this.channel != null) {
             if(this.compressionThreshold >= 0) {
-                if(this.channel.pipeline().get("compression") == null) {
+                if(this.channel.pipeline().get("compression") == null && channel.pipeline().names().contains("codec")) {
                     this.channel.pipeline().addBefore("codec", "compression", new TcpPacketCompression(this));
                 }
             } else if(this.channel.pipeline().get("compression") != null) {
